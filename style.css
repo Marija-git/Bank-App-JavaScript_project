@@ -1,0 +1,869 @@
+/* style="background-color: rgb(186, 173, 210);" */
+
+body,html {
+    /* background-color:rgb(186, 173, 210); */
+    background-image: url('https://img.freepik.com/premium-photo/flying-calendar-with-coins-credit-card-blue-isolated-background-3d-render-illustration_531308-62.jpg');
+    background-position: center;
+    height: 100%;
+    margin: 0;
+}
+
+.login{
+    position: absolute;
+    left: 800px;
+    top: 250px;
+    background-color:rgb(5, 5, 50);
+    color: white;
+    width: 400px;
+    height: 430px;
+    text-align: center;
+    justify-content: center;
+    border-top-right-radius: 50px;  
+    border-bottom-left-radius: 50px;    
+    font-family: cursive;            
+}
+
+.login input{
+    display: block;
+    width: 65%;
+    height: 10%;
+    margin: 50px auto;
+    font-family: cursive;  
+
+}
+
+.login_input_accNum{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    border: none;
+    border-bottom: 2px solid rgb(186, 173, 210);
+    background-color: rgb(5, 5, 50);
+    color: white;
+    outline: none;
+    font-size: 20px;
+   
+}
+
+.login_input_pin{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: none;
+    border-bottom: 2px solid rgb(186, 173, 210);
+    background-color: rgb(5, 5, 50);
+    color: white;
+    outline: none;
+    font-size: 20px;
+   
+}
+
+.login button{
+    background-color: rgb(186, 173, 210);
+    text-align: center;
+    padding: 10px 80px;
+    border-radius:50px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: cursive;  
+}
+
+.login p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+
+/* page2 */
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.container div{
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 8px;   
+    overflow: auto;
+    /* border:none; */
+}
+
+.leftDiv{
+    background-color: rgb(5, 5, 50);
+    width: 10%;
+}
+
+.middleDiv{
+    background-color: white;
+    width: 70%;
+}
+
+.rightDiv{
+    background-color: rgb(186, 173, 210);
+    width: 20%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row; 
+    border: none !important;
+}
+
+.logo p{
+    font-family:cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;   
+    text-decoration: underline;    
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.meni1 ul,.meni2 ul{
+   list-style-type:none;
+   padding: 0px;
+}
+
+.meni1 ul li, .meni2 ul li{
+    margin-bottom: 30px;
+    /* border: 1px solid #ddd;   */
+    /* border-radius: 5px;   */
+    padding: 10px;  
+    position:relative;
+}
+.meni1 ul li::before,.meni2 ul li::before{
+    content:''; 
+    font-size: 20px; /* Prilagodite veličinu tačke prema potrebi */
+    color: #333; /* Boja tačke */
+    padding-left: 20px; 
+   
+}
+.meni1 a,.meni2 a{
+    color: white;
+    font-family:cursive;
+    font-size: 20px;
+    text-decoration-line: none;
+    /* background-color: rgb(197, 239, 112); */
+   padding-left: 15px; 
+   cursor: pointer;  
+}
+
+.icon1::before{
+    background-image: url('https://as2.ftcdn.net/v2/jpg/05/18/10/87/1000_F_518108780_BXyzQVVYKecnRhrncn35ZGWJm7HRWp1b.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon2::before{
+    background-image: url('https://previews.123rf.com/images/imagecatalogue/imagecatalogue1603/imagecatalogue160300738/53968876-exchange-arrows-vector-icon-style-is-flat-icon-symbol-black-color-white-background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon3::before{
+    background-image: url('https://previews.123rf.com/images/mrswilkins/mrswilkins1802/mrswilkins180200976/95188061-bank-card-icon-vector-illustration.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon4::before{
+    background-image: url('https://icon-library.com/images/settings-symbol-icon/settings-symbol-icon-23.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* .icon5::before{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/022/123/337/original/user-icon-profile-icon-account-icon-login-sign-line-vector.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.btnLogOut{
+    background-color: rgb(186, 173, 210);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius:5px;
+    cursor: pointer;
+    font-family:cursive;
+    font-size: 20px;
+    margin-top: 80px;
+}
+.btnLogOut:hover,.sort_btn:hover{
+    background-color: rgb(146, 136, 164) ;
+}
+.icon6{
+    margin-top: 390px;
+}
+
+.icon1:hover,.icon2:hover,.icon3:hover,.icon4:hover,.icon5:hover{
+    background-color: rgb(186, 173, 210);    
+}
+.meni1,.meni2{
+    border: none !important;
+}
+
+.divOne{
+    display: flex;
+    flex-direction: row;
+    height: 24%;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+.firstMandBalance
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 230px;
+    border: none !important;
+    overflow: hidden;
+    margin-top:s0px;
+}
+.firstMandBalance p.first_message {
+    font-family: cursive;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0px;
+    /* border: 1px solid black; */
+    height: 50px;
+    border: none !important;
+   
+}
+.firstMandBalance div.balance{
+    font-family: cursive;
+    font-size: 18px;
+    color: gray;
+    height: 90px;
+    width: 160px;
+    margin-top:57px;
+    overflow:hidden;    
+    background-color: rgb(252, 249, 245);
+    border:none !important;
+}
+
+
+.divTransactions{
+    height: 37%;
+    border: none !important;
+    
+}
+.typedatevalue
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;   
+}
+
+.movType, .movValue,.movDate{
+    width: 92px;
+}
+
+.divTransactions p{
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+    /* width: 20%; */
+    
+}
+.divTransactions button{
+    border: none;
+    margin-left: 93%;
+    height: 50px;
+    width: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:cursive;
+    font-size: 20px;
+    background-color:rgb(186, 173, 210) ;
+    background-image: url('https://icons.veryicon.com/png/o/miscellaneous/utility/sort-27.png');
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 60px;
+    text-align: left; 
+}
+.movType--deposit{
+    background-color: rgb(149, 241, 149);
+    font-family: cursive;
+    border-radius: 40px;
+    border: none !important;
+    width: 7%;
+    text-align: center;
+    
+}
+.movType--withdrawal{
+    background-color: rgb(233, 142, 142);
+    font-family: cursive;
+    border-radius: 40px;
+    border: none !important;
+    width: 7%;
+}
+.movDate{
+    font-family: cursive;
+    color: gray;
+    width: 8%;    
+    border: none !important;
+}
+.movValue{
+    font-family: cursive;
+    font-size: 16px;
+    color: gray;
+    border: none !important;
+}
+.rectangle{
+    width: 340px;
+    height: 230px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 720px;    
+    border: none !important;
+    position: relative;
+    
+}
+.circle{
+   background-color:white;
+   width:150px;
+   height: 130px;
+   margin-left: 170px;
+   border: none !important;
+   overflow: hidden !important;
+  
+}
+.circle img{
+    background-color:white;
+    width:100%;
+    height: 100%;
+    object-fit:contain;
+    border: none  !important;
+}
+.myForm{
+    /* background-color: yellow; */
+    width: 220px;
+    margin-left: 80px;
+    font-family: cursive;
+    font-size: 18px;
+    color: gray;
+    border: none  !important;
+    border-radius: 5px;
+    background-color:rgb(252, 249, 245);
+   
+}
+.myForm input{
+    color: transparent;    
+}
+
+.divCards{
+    height: 39%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    overflow-x:hidden ;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+
+}
+.cardContainer{
+    display:flex;
+    flex-direction: row;
+    width: 60%;
+    height: 80%;
+    margin-left: 220px;
+    justify-content: center;  
+    border: none !important; 
+}
+.card{
+    background-color:rgb(252, 187, 137);
+    width: 50%;
+    height: 80%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    border-radius: 20px;
+    font-family: cursive;
+    border:1px solid black;
+    /* position: relative; */
+    transition: transform 1s ease;
+}
+#card1{
+    background-color: rgb(213, 156, 191);
+    transform: translateX(20%);
+}
+#card2{
+    transform: translateX(-50%);
+}
+.typeOfCard{
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 20px; 
+}
+.amount{
+    width: 40%;
+    margin-left: 20px; 
+}
+.cardNum{
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.switchButton{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none !important;
+}
+.switchButton button{
+    height: 100%;   
+    background-color: rgb(197, 194, 194);
+    border: none !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150px;
+    font-weight: normal;
+    color: #333;
+    cursor:pointer;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.switchButton button:hover{
+    background-color: grey
+}
+
+.rightDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.transferOperation,.divConvert{
+    height: 30%;
+    border-radius: 10px;
+    border: none !important;
+    background-color: rgb(136, 108, 150);
+   
+}
+.transferOperation p, .deleteAccOperation p,.divConvert p{
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: rgb(5, 5, 50);
+}
+.transferOperation input, .divConvert input{
+    display: flex;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    height: 50px;
+    width: 80%;
+    padding-top: 10px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: none;
+}
+.AmountInput
+{
+   margin-top: 10px;
+}
+.transferOperation button,.divConvert button{
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 50px;
+    width: 80%;
+    border-radius:10px ;
+    font-family: cursive;
+    font-size: 20px;
+    background-color:rgb(5, 5, 50);
+    color: white;
+    cursor: pointer;
+}
+.transferOperation button:hover,.btnConvert:hover{
+    background-color:rgb(10, 10, 115);
+}
+.deleteAccOperation
+{
+    height: 30%;
+    margin-bottom: 170px;
+    border: none !important;
+    border-radius: 10px;
+    background-color: rgb(223, 141, 141);   
+}
+.deleteAccOperation input{
+    display: flex;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    height: 50px;
+    width: 80%;
+    padding-top: 10px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: none;
+}
+.DeleteAccInputPin{
+    margin-top: 10px;
+}
+.deleteAccOperation button{
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 50px;
+    width: 80%;
+    border-radius:10px ;
+    font-family: cursive;
+    font-size: 20px;
+    background-color:rgb(5, 5, 50);
+    color: white;
+    cursor: pointer;
+}
+.deleteAccOperation button:hover{
+    background-color:rgb(10, 10, 115);
+}
+.divTimer{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color:rgb(5, 5, 50) ;
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    border: none !important;
+}
+.dateAndTime{
+    height: 50px;
+    width: 270px;
+    font-family: cursive;
+    font-size: 15px;
+    color: gray;
+    border-radius: 5px; 
+    background-color: whitesmoke;
+    margin-bottom: 0px;
+}
+
+#converterMiddleDiv,#cardsMiddleDiv,#settingsMiddleDiv{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#converterMiddleDiv div{
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 8px;  
+    overflow: auto; 
+}
+#converterRightDiv,#cardsRightDiv,#settingsRightDiv{
+   background-color:rgb(186, 173, 210);
+    width: 20%;
+}
+#CurrencyConverter,#c0,#Settings{
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: none !important;
+}
+#cards--accounts{
+    /* margin-bottom: 800px; */
+    display: flex;
+    flex-direction: column;  
+    height: 900px;
+    justify-content:space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    border: none  !important;
+}
+#cards--accounts div{
+    box-sizing: border-box;   
+    border-radius: 10px;
+    width: 70%;
+    height: 150px;
+    font-family: cursive;
+    font-size: 20px;
+    
+}
+#DIN{ 
+    background-color: rgb(213, 156, 191) ;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#EUR{
+    background-color:rgb(252, 187, 137);
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#DIN div, #EUR div{
+    width: 200px;
+    height: 80px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+#amountDIN,#amountEUR{
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+}
+
+#amountDIN ul,#amountEUR ul{
+    list-style-type: none;
+}
+#amountDIN ul li,#amountEUR ul li{
+    position:relative;
+}
+
+#amountDIN ul li::before,#amountEUR ul li::before{
+    content:''; 
+    padding-left: 40px; 
+   
+}
+
+#amountDIN ul li::before{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/810px-Flag_of_Europe.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#amountEUR ul li::before{
+    background-image: url('https://www.srbija.gov.rs/static/sr/80938/0/img_80938.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#valutaDIN,#valutaEUR{
+    border: none !important;
+}
+#valutaDIN p,#valutaEUR p{
+    padding-left: 40px;
+}
+.krug{
+    width: 250px !important;
+    height: 250px !important;
+    border-radius: 50% !important;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/03/10/51/38/1000_F_310513889_iQD1iRJJv77CUUw0kxlLlIzyzwo3TNZ1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 40px solid rgb(192, 248, 192)  !important;
+    /* border-top-color:  rgb(213, 156, 191) !important;
+    border-bottom-color:rgb(252, 187, 137) !important; */
+}
+#tableConverter{
+    border-radius: 10px;
+    background-color: rgb(233, 249, 199);
+    border: none !important;
+    width: 100%;
+    table-layout: fixed;
+    font-family: cursive;
+    font-size: 20px;
+    border-spacing: 0;
+}
+#tableConverter,tr,th{
+    border-bottom: 1px solid black;  
+    height: 100px;
+}
+
+#tableConverter td{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+#chftr td{
+    border-bottom: none !important;
+}
+
+.divConvert{
+    margin-top: 150px;
+}
+
+/* #cardsMiddleDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+#c1,#c2{
+    height: 41%;
+    margin-bottom: 30px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border-left: none;
+    border-right: none;
+}
+
+#c1 #firstCard,#c2 #secondCard{
+    width: 40%;
+    height: 70%;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: cursive;
+}
+
+#c1 #firstCard{
+    background-color: rgb(213, 156, 191);   
+}
+
+#c2 #secondCard{
+    background-color: rgb(252, 187, 137);
+}
+#firstCard .typeOfCard,#secondCard .typeOfCard{
+    height: 40px;
+    width: 170px;
+
+}
+#firstCard .amount,#secondCard .amount{
+    height: 40px;
+    width: 170px;
+    
+}
+#firstCard .cardNum,#secondCard .cardNum{
+    height: 40px;
+    width: 300px;
+}
+
+
+#dailyLimit{
+    width: 180px;
+    height: 120px;
+    margin-right: 350px;
+    margin-top: 150px;
+    text-align: center;
+    border-radius: 5px;
+    background-color:  rgb(186, 173, 210);
+    overflow: hidden;
+    font-family: cursive;
+    border: none;
+    cursor: pointer; 
+}
+#dailyLimit:hover{
+    background-color:rgb(146, 136, 164) ;
+}
+.form1{
+    background-color: rgb(5, 5, 50);
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+.form1 select{
+    width: 250px;
+    height: 50px;
+    background-color: #8a7d7de6;
+    color: white;
+    font-family: cursive;
+    font-size: 16px;
+    /* margin-bottom: 160px;  */
+    border-radius: 5px;
+}
+
+.inputLimit
+{
+    width:250px;
+    border-radius:5px ;
+    height: 50px;
+    background-color:#9c9595e6 ;
+    color: white;
+    font-family: cursive;
+    font-size: 16px;
+    
+}
+.classSubmit{
+    width: 150px;
+    height: 50px;
+    background-color:rgb(146, 136, 164);
+    color: white;
+    font-family: cursive;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#darkTheme{
+    margin-bottom: 600px;
+    width: 70%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 202);
+    border: none !important;
+}
+#darkTheme div{   
+    text-align: center;
+    padding-top: 20px;
+    font-family: cursive;
+}
+#dt{
+    border: none;
+    width: 110px;
+    height: 70px;
+    border-radius: 5px;
+}
+#dtb{
+    margin-right: 10px;
+    width: 200px;
+    align-items: center;
+    border-radius: 5px;
+    border: none  !important;
+}
+#dtb button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: cursive;
+    border: none !important;
+}
+#dtb button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/* .container.dark-theme div{
+    background-color: #1e1e1e;
+    color: #ffffff;
+} */
+
+body.dark-theme div{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
