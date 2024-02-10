@@ -1,5 +1,8 @@
 'use strict'
-
+let formExist = false;
+let limEur = "Unlimited";
+let limRSD = "Unlimited";
+let brojac = 0;
 const displayMenuCards = function()
 {
     var bodyElement = document.body;
@@ -16,6 +19,7 @@ const displayMenuCards = function()
     uni();
     showHomePageLeftDiv();
     displayCardsMiddleDiv();
+    brojac++;
 
 }
 
@@ -51,17 +55,21 @@ const displayCardsMiddleDiv = function()
     displayCard2();
 
     const html2 = `
-        <div id="dailyLimit" onclick="limit()">Daily limit
-            <p>Unlimited</p>
-            <p>Tap here to change</p>
+        <div id="dailyLimit" onclick="limit()">
+            
+            <p>Tap here to change daily limit</p>
         </div>
     `;
     document.querySelector('#c1').insertAdjacentHTML("beforeend",html2);
     document.querySelector('#c2').insertAdjacentHTML("beforeend",html2);
+    const p1 = `<p>${limEur}</p>`;
+    const p2 = `<p>${limRSD}</p>`;
+    document.querySelector('#c1').children[1].insertAdjacentHTML("afterbegin",p1);
+    document.querySelector('#c2').children[1].insertAdjacentHTML("afterbegin",p2);
    
 }
 
-let formExist = false;
+
 const limit=function()
 {
     if(formExist === false)
@@ -101,13 +109,15 @@ const limit=function()
                 if(opcija.value === "eur")
                 {
                     alert('eur');
-                    (document.querySelector('#c1').lastElementChild).children[0].textContent = document.querySelector('.inputLimit').value;
+                    limEur = document.querySelector('.inputLimit').value;
+                    (document.querySelector('#c1').lastElementChild).children[0].textContent = limEur;
                     console.log( (document.querySelector('#c1').lastElementChild).children[0].textContent);
                 }
                 else if(opcija.value === "rsd")
                 {
                     alert('din');
-                    (document.querySelector('#c2').lastElementChild).children[0].textContent = document.querySelector('.inputLimit').value;
+                    limRSD = document.querySelector('.inputLimit').value;
+                    (document.querySelector('#c2').lastElementChild).children[0].textContent =limRSD ;
                     console.log( (document.querySelector('#c2').lastElementChild).children[0].textContent);                  
                 }               
             }

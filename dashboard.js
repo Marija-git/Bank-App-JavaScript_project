@@ -472,9 +472,9 @@ const transfer=function()
 
   document.querySelector('.transferToInput').value = document.querySelector('.AmountInput').value = '';
 
-  if(document.querySelector('#dailyLimit'))
+  if(brojac > 0)
     {
-       if(document.querySelector('#dailyLimit').children[0].textContent === "Unlimited")
+       if(limEur == "Unlimited")
        {
             //moze proba transfera
             if(amount > 0 && currentAcc.balance >= amount && receiverAcc.accNum !== currentAcc.accNum)
@@ -510,8 +510,8 @@ const transfer=function()
        }
        else
        {
-            const ogranicenje = Number(document.querySelector('#dailyLimit').children[0].textContent);
-            if(amount < ogranicenje)
+            // const ogranicenje = Number(document.querySelector('#dailyLimit').children[0].textContent);
+            if(amount < limEur)
             {
                 //moze proba transfera
                 if(amount > 0 && currentAcc.balance >= amount && receiverAcc.accNum !== currentAcc.accNum)
@@ -555,7 +555,6 @@ const transfer=function()
     //ako ne psotoji daily limi opet proba transfera
     else if(amount > 0 && currentAcc.balance >= amount && receiverAcc.accNum !== currentAcc.accNum)
     {
-
             //dodati kod za promenu u bazi
             receiverAcc.movements.push(amount);
             currentAcc.movements.push(-amount);
