@@ -1,18 +1,10 @@
 'use strict';
 
 const btnLogin = document.querySelector('.login_btn');
-
 const inputLoginAccNum = document.querySelector('.login_input_accNum');
 const inputLoginPin = document.querySelector('.login_input_pin');
-const inputTransferName = document.querySelector('.transferToInput');
-const inputTransferAmount = document.querySelector('.AmountInput');
-const DeleteAccInputAccNum = document.querySelector('.DeleteAccInputAccNum');
-const DeleteAccInputPin = document.querySelector('.DeleteAccInputPin');
 const loginForm = document.querySelector('.login');
-
 const divBalance = document.querySelector('.balance');
-const divMovements = document.querySelector('.movements');
-
 const pFirstMessage = document.querySelector('.first_message');
 
 

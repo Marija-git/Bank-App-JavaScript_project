@@ -5,17 +5,18 @@ body,html {
     background-image: url('https://img.freepik.com/premium-photo/flying-calendar-with-coins-credit-card-blue-isolated-background-3d-render-illustration_531308-62.jpg');
     background-position: center;
     height: 100%;
+    width: 100%;
     margin: 0;
 }
 
 .login{
     position: absolute;
-    left: 800px;
-    top: 250px;
+    margin-left: 800px;
+    margin-top: 300px;
     background-color:rgb(5, 5, 50);
     color: white;
-    width: 400px;
-    height: 430px;
+    width: 390px;
+    height: 470px;
     text-align: center;
     justify-content: center;
     border-top-right-radius: 50px;  
@@ -72,13 +73,10 @@ body,html {
     font-size: 20px;
 }
 
-
-
-/* page2 */
 .container{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 100vh;    
 }
 
 .container div{
@@ -107,6 +105,8 @@ body,html {
 .logo{
     display: flex;
     flex-direction: row; 
+    width: 100%;
+    height: auto;
     border: none !important;
 }
 
@@ -114,35 +114,39 @@ body,html {
     font-family:cursive;
     font-style: italic;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5rem;
+    /* font-size: 25px; */
     color: white;   
     text-decoration: underline;    
 }
 
 .logo img{
-    width: 50px;
-    height: 50px;
-    padding-left: 10px;
-    padding-top: 20px;
+    width: 30%;
+    height: 30%;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 
 .meni1 ul,.meni2 ul{
    list-style-type:none;
    padding: 0px;
+   width: 100%;
+   height: 100%;
 }
 
 .meni1 ul li, .meni2 ul li{
-    margin-bottom: 30px;
+    margin-bottom: 25%;
     /* border: 1px solid #ddd;   */
     /* border-radius: 5px;   */
-    padding: 10px;  
+    padding: 5%;  
     position:relative;
+    width: 90%;
 }
 .meni1 ul li::before,.meni2 ul li::before{
     content:''; 
     font-size: 20px; /* Prilagodite veličinu tačke prema potrebi */
     color: #333; /* Boja tačke */
-    padding-left: 20px; 
+    padding-left: 20%; 
    
 }
 .meni1 a,.meni2 a{

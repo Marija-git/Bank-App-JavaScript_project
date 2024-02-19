@@ -242,11 +242,6 @@ const showHomePageRightDiv=function()
 
 
 
-
-
-
-
-
 const displayMovements = function(movements,divTransactions,sredjeniDatumi)
 {   
          
@@ -325,7 +320,7 @@ const displayCards = function()
     document.querySelector("#card1").children[1].textContent = `${sumEUR}`;
     document.querySelector("#card1").children[2].textContent = currentAcc.cardNum2;
 
-    document.querySelector("#card2").children[0].textContent = 'DIN';
+    document.querySelector("#card2").children[0].textContent = 'RSD';
     const sumRSD = currentAcc.movementsRSD.reduce((accumulator,currentMov) => accumulator+currentMov,0);
     document.querySelector("#card2").children[1].textContent = `${sumRSD}`;   
     document.querySelector("#card2").children[2].textContent = currentAcc.cardNum1;
@@ -664,10 +659,21 @@ const logOut = function()
         if(confirmation)
         {
             clearInterval(helperVar);
-            console.log('odjava');  
-            document.querySelector('.leftDiv').style.display='none';
-            document.querySelector('.middleDiv').style.display='none';         
-            document.querySelector('.rightDiv').style.display='none';
+            // console.log('odjava');  
+            // document.querySelector('.leftDiv').style.display='none';
+            // document.querySelector('.middleDiv').style.display='none';         
+            // document.querySelector('.rightDiv').style.display='none';
+
+            var bodyElement = document.body;
+            var allElements = bodyElement.children;
+            for (var i = allElements.length - 1; i >= 0; i--)
+            {
+                var currentElement = allElements[i];
+                if (currentElement.tagName !== 'SCRIPT' && currentElement.tagName !== 'MAIN') 
+            {
+                 currentElement.parentNode.removeChild(currentElement);
+            }
+    }
             
             inputLoginAccNum.value='';
             inputLoginPin.value='';
